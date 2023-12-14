@@ -1,0 +1,3 @@
+/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles/MyProject.dir
+/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles/edit_cache.dir
+/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles/rebuild_cache.dir
