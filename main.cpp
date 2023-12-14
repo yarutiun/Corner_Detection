@@ -13,6 +13,7 @@ void fastCornerDetection(Mat image, int threshold, vector<Point2f>& corners) {
         for (int j = 0; j < image.cols; j++) {
             // Check if the current point is a potential corner
             bool isCorner = true;
+            int strongPixelCount = 0;
 
             // Check the pixels within a circle around the current point
             for (int x = -threshold; x <= threshold; x++) {
@@ -30,7 +31,6 @@ void fastCornerDetection(Mat image, int threshold, vector<Point2f>& corners) {
             }
 
             // If the number of strong pixels exceeds the threshold, it's a corner
-            int strongPixelCount = 0;
             for (int x = -threshold; x <= threshold; x++) {
                 for (int y = -threshold; y <= threshold; y++) {
                     if (indicator[i * image.cols + j + y]) {
@@ -39,7 +39,7 @@ void fastCornerDetection(Mat image, int threshold, vector<Point2f>& corners) {
                 }
             }
 
-            if (strongPixelCount >= threshold) {
+            if (isCorner && strongPixelCount >= threshold) {
                 corners.push_back(Point2f(j, i));
                 isCorner = false;
             }
@@ -49,7 +49,7 @@ void fastCornerDetection(Mat image, int threshold, vector<Point2f>& corners) {
 
 int main() {
     // Read the image
-    Mat image = imread("leaf.jpeg");
+    Mat image = imread("cub.png");
 
     // Convert the image to grayscale
     Mat grayImage;
@@ -70,10 +70,10 @@ int main() {
     vector<Point2f> corners;
 
     // Detect corners using the FAST algorithm
-    fastCornerDetection(grayImage, threshold, corners);
+    fastCornerDetection(denoisedImage, threshold, corners);
 
-    // Display the original image and the detected corners
-    imshow("Original Image", image);
+    // Copy the original image
+    Mat imageCopy = image.clone();
 
     // Convert the vector of corners to a vector of KeyPoints
     vector<KeyPoint> keyPoints;
@@ -83,10 +83,9 @@ int main() {
         keyPoints.push_back(keypoint);
     }
 
-    drawKeypoints(image, keyPoints, image);
-    imshow("Corners", image);
+    drawKeypoints(imageCopy, keyPoints, imageCopy);
+    imshow("Corners", imageCopy);
 
     waitKey(0);
 
-    return 0;
 }
