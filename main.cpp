@@ -55,7 +55,7 @@ int main() {
     Mat grayImage;
     cvtColor(image, grayImage, COLOR_BGR2GRAY);
 
-    imshow("Grey", grayImage);
+    imshow("Origin", image);
 
     // Apply a bilateral filter to reduce noise
     Mat denoisedImage;
@@ -64,7 +64,7 @@ int main() {
     bilateralFilter(grayImage, denoisedImage, 9, 75, 75);
 
     // Set the threshold for corner detection
-    int threshold = 10;
+    int threshold = 1;
 
     // Vector to store detected corners
     vector<Point2f> corners;
@@ -84,6 +84,9 @@ int main() {
     }
 
     drawKeypoints(imageCopy, keyPoints, imageCopy);
+
+    //Scalar(0, 0, 255)
+
     imshow("Corners", imageCopy);
 
     waitKey(0);
