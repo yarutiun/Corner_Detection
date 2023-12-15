@@ -5,7 +5,7 @@ project(MyProject)
 find_package(OpenCV REQUIRED)
 
 # Add executable
-add_executable(MyProject main.cpp)
+add_executable(MyProject main.cpp KLT.cpp FAST.cpp)
 
 # Link executable to OpenCV libraries
 target_link_libraries(MyProject ${OpenCV_LIBS})

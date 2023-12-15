@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyProject.dir/FAST.cpp.o"
+  "CMakeFiles/MyProject.dir/FAST.cpp.o.d"
+  "CMakeFiles/MyProject.dir/KLT.cpp.o"
+  "CMakeFiles/MyProject.dir/KLT.cpp.o.d"
   "CMakeFiles/MyProject.dir/main.cpp.o"
   "CMakeFiles/MyProject.dir/main.cpp.o.d"
   "MyProject"

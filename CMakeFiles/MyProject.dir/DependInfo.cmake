@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/FAST.cpp" "CMakeFiles/MyProject.dir/FAST.cpp.o" "gcc" "CMakeFiles/MyProject.dir/FAST.cpp.o.d"
+  "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/KLT.cpp" "CMakeFiles/MyProject.dir/KLT.cpp.o" "gcc" "CMakeFiles/MyProject.dir/KLT.cpp.o.d"
   "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/main.cpp" "CMakeFiles/MyProject.dir/main.cpp.o" "gcc" "CMakeFiles/MyProject.dir/main.cpp.o.d"
   )
 

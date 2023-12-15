@@ -129,6 +129,54 @@ MyProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
 
+FAST.o: FAST.cpp.o
+.PHONY : FAST.o
+
+# target to build an object file
+FAST.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/FAST.cpp.o
+.PHONY : FAST.cpp.o
+
+FAST.i: FAST.cpp.i
+.PHONY : FAST.i
+
+# target to preprocess a source file
+FAST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/FAST.cpp.i
+.PHONY : FAST.cpp.i
+
+FAST.s: FAST.cpp.s
+.PHONY : FAST.s
+
+# target to generate assembly for a file
+FAST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/FAST.cpp.s
+.PHONY : FAST.cpp.s
+
+KLT.o: KLT.cpp.o
+.PHONY : KLT.o
+
+# target to build an object file
+KLT.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/KLT.cpp.o
+.PHONY : KLT.cpp.o
+
+KLT.i: KLT.cpp.i
+.PHONY : KLT.i
+
+# target to preprocess a source file
+KLT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/KLT.cpp.i
+.PHONY : KLT.cpp.i
+
+KLT.s: KLT.cpp.s
+.PHONY : KLT.s
+
+# target to generate assembly for a file
+KLT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/KLT.cpp.s
+.PHONY : KLT.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyProject"
+	@echo "... FAST.o"
+	@echo "... FAST.i"
+	@echo "... FAST.s"
+	@echo "... KLT.o"
+	@echo "... KLT.i"
+	@echo "... KLT.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

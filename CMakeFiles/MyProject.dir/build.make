@@ -83,14 +83,46 @@ CMakeFiles/MyProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/main.cpp" -o CMakeFiles/MyProject.dir/main.cpp.s
 
+CMakeFiles/MyProject.dir/KLT.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/KLT.cpp.o: KLT.cpp
+CMakeFiles/MyProject.dir/KLT.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/KLT.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/KLT.cpp.o -MF CMakeFiles/MyProject.dir/KLT.cpp.o.d -o CMakeFiles/MyProject.dir/KLT.cpp.o -c "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/KLT.cpp"
+
+CMakeFiles/MyProject.dir/KLT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/KLT.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/KLT.cpp" > CMakeFiles/MyProject.dir/KLT.cpp.i
+
+CMakeFiles/MyProject.dir/KLT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/KLT.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/KLT.cpp" -o CMakeFiles/MyProject.dir/KLT.cpp.s
+
+CMakeFiles/MyProject.dir/FAST.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/FAST.cpp.o: FAST.cpp
+CMakeFiles/MyProject.dir/FAST.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/FAST.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/FAST.cpp.o -MF CMakeFiles/MyProject.dir/FAST.cpp.o.d -o CMakeFiles/MyProject.dir/FAST.cpp.o -c "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/FAST.cpp"
+
+CMakeFiles/MyProject.dir/FAST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/FAST.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/FAST.cpp" > CMakeFiles/MyProject.dir/FAST.cpp.i
+
+CMakeFiles/MyProject.dir/FAST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/FAST.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/FAST.cpp" -o CMakeFiles/MyProject.dir/FAST.cpp.s
+
 # Object files for target MyProject
 MyProject_OBJECTS = \
-"CMakeFiles/MyProject.dir/main.cpp.o"
+"CMakeFiles/MyProject.dir/main.cpp.o" \
+"CMakeFiles/MyProject.dir/KLT.cpp.o" \
+"CMakeFiles/MyProject.dir/FAST.cpp.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
 MyProject: CMakeFiles/MyProject.dir/main.cpp.o
+MyProject: CMakeFiles/MyProject.dir/KLT.cpp.o
+MyProject: CMakeFiles/MyProject.dir/FAST.cpp.o
 MyProject: CMakeFiles/MyProject.dir/build.make
 MyProject: /opt/homebrew/lib/libopencv_gapi.4.8.1.dylib
 MyProject: /opt/homebrew/lib/libopencv_stitching.4.8.1.dylib
@@ -148,7 +180,7 @@ MyProject: /opt/homebrew/lib/libopencv_photo.4.8.1.dylib
 MyProject: /opt/homebrew/lib/libopencv_imgproc.4.8.1.dylib
 MyProject: /opt/homebrew/lib/libopencv_core.4.8.1.dylib
 MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/yarutiun/Desktop/Cool stuff/Corner_Detection/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
